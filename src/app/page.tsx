@@ -5,31 +5,37 @@ import IssueCard from '../components/IssueCard'
 
 const issues = [
   {
+    key: 1,
     title: "Authentication Error",
     description: "Users are unable to log in to the app due to an authentication error.",
     tags: ["Devops", "UI", "a11y"],
   },
   {
+    key: 2,
     title: "Broken Link",
     description: "The link to the user profile page is broken and leads to a 404 error.",
     tags: ["UI", "a11y"],
   },
   {
+    key: 3,
     title: "Missing Data",
     description: "The user profile page is missing the user's name and profile picture.",
     tags: ["UI"],
   },
   {
+    key: 4,
     title: "Broken Image",
     description: "The user profile picture is broken and leads to a 404 error.",
     tags: ["UI", "a11y"],
   },
   {
+    key: 5,
     title: "Incorrect Styling",
     description: "The user profile page is missing the correct styling.",
     tags: ["UI"],
   },
   {
+    key: 6,
     title: "Incorrect Data",
     description: "The user profile page is missing the user's name and profile picture.",
     tags: ["UI"],
@@ -46,7 +52,7 @@ export default function Home() {
         </Flex>
         <Flex direction='column' gap='4'>
           {issues.map((issue) => (
-            <IssueCard title={issue.title} description={issue.description} tags={issue.tags}/>
+            <IssueCard key={issue.key} title={issue.title} description={issue.description} tags={issue.tags} />
           ))}
         </Flex>
       </Container>
