@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Flex, Heading, Text, Card, Badge } from '@radix-ui/themes'
+import { Container, Flex, Heading, Text } from '@radix-ui/themes'
 import IssueCard from '../components/IssueCard'
 
 const issues = [
