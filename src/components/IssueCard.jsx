@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Flex, Heading, Text, Card, Badge, Button } from '@radix-ui/themes'
 import { ChatBubbleIcon } from '@radix-ui/react-icons'
-import Comment from './comment'
+import Comment from './Comment'
 import PropTypes from 'prop-types';
 
 const badgeColors = ['red', 'blue', 'green', 'yellow']
